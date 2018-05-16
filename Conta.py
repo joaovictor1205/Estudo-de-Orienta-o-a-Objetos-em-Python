@@ -13,9 +13,16 @@ class Conta:
         self.__saldo += valor
         print("Novo saldo é de {} reais".format(self.__saldo))
 
+    def __pode_sacar(self, valor_a_sacar):
+        valor_disponivel_a_sacar = (self.__saldo + self.__limite)
+        return valor_a_sacar <= valor_disponivel_a_sacar
+
     def saca(self, valor):
-        self.__saldo -= valor
-        print("Novo saldo é de {} reais".format(self.__saldo))
+        if(self.__pode_sacar(valor)):
+            self.__saldo -= valor
+            print("Novo saldo é de {} reais".format(self.__saldo))
+        else:
+            print("O Valor {} passou o limite".format(valor))
 
     def transfere(self, valor, destino):
         self.saca(valor)
