@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/OrientacaoObjeto.iml" filepath="$PROJECT_DIR$/.idea/OrientacaoObjeto.iml" />
+      <module fileurl="file://$USER_HOME$/connectedin/.idea/connectedin.iml" filepath="$USER_HOME$/connectedin/.idea/connectedin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jogoteca/.idea/jogoteca.iml" filepath="$PROJECT_DIR$/../jogoteca/.idea/jogoteca.iml" />
     </modules>
   </component>
 </project>
